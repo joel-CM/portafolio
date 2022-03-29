@@ -16,13 +16,16 @@ export default function Footer() {
       </Heading>
       <HStack spacing={5} justifyContent={"center"} py={3}>
         <Box as={"span"} cursor={"pointer"}>
-          <Link href={"#"} target={"_blank"}>
+          <Link
+            href={"https://www.linkedin.com/in/joel-c-dev"}
+            target={"_blank"}
+          >
             <BsLinkedin style={{ fontSize: "30px" }} />
           </Link>
         </Box>
 
         <Box as={"span"} cursor={"pointer"}>
-          <Link href={"#"} target={"_blank"}>
+          <Link href={"https://github.com/joel-CM"} target={"_blank"}>
             <AiFillGithub style={{ fontSize: "30px" }} />
           </Link>
         </Box>
