@@ -1,0 +1,4 @@
+/* Works on Chrome, Edge, and Safari */
+.textContent::-webkit-scrollbar {
+  display: none;
+}
