@@ -1,6 +1,6 @@
-import CardProyect from "../CardProyect.js/CardProyect";
+import CardProyect from "../CardProyect/CardProyect";
 import { Box, Flex, Heading } from "@chakra-ui/react";
-
+g
 export default function Proyects(props) {
   return (
     <Box px={10}>

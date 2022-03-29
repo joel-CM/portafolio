@@ -19,13 +19,7 @@ export default function CardProyect({ img, title, link, info }) {
           height={"100%"}
         />
       </Flex>
-      <Heading
-        as={"h4"}
-        size={"md"}
-        textAlign={"center"}
-        py={3}
-        color={"teal.700"}
-      >
+      <Heading as={"h4"} size={"md"} textAlign={"center"} py={3} color={"teal"}>
         {title}
       </Heading>
       <Text
@@ -35,7 +29,7 @@ export default function CardProyect({ img, title, link, info }) {
         p={3}
         minH={"250px"}
         maxH={"250px"}
-        color={"teal.700"}
+        color={"teal"}
         overflowY={"auto"}
       >
         {info}
