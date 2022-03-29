@@ -15,7 +15,7 @@ import { FaNodeJs } from "react-icons/fa";
 
 export default function Skills() {
   return (
-    <Box px={10}>
+    <Box px={10} id={"tech-skills"}>
       <Heading
         py={"3rem"}
         textAlign={["center", "center", "end", "end"]}

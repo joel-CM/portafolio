@@ -35,6 +35,22 @@ export default function MobileMenu() {
                 <MenuItem
                   color={"teal"}
                   _hover={{ background: "#aaddaa", color: "#efffef" }}
+                  onClick={() =>
+                    router.push("http://localhost:3000/#tech-skills")
+                  }
+                >
+                  Tech Skills
+                </MenuItem>
+                <MenuItem
+                  color={"teal"}
+                  _hover={{ background: "#aaddaa", color: "#efffef" }}
+                  onClick={() => router.push("http://localhost:3000/#projects")}
+                >
+                  Projects
+                </MenuItem>
+                <MenuItem
+                  color={"teal"}
+                  _hover={{ background: "#aaddaa", color: "#efffef" }}
                   onClick={() => router.push("/contact")}
                 >
                   Contact

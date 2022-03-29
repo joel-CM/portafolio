@@ -2,6 +2,7 @@
 
 .layout {
   min-width: 350px;
+  position: relative;
 }
 
 .menu {

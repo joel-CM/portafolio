@@ -1,9 +1,9 @@
 import CardProyect from "../CardProyect/CardProyect";
 import { Box, Flex, Heading } from "@chakra-ui/react";
-g
+
 export default function Proyects(props) {
   return (
-    <Box px={10}>
+    <Box px={10} id={"projects"}>
       <Heading
         py={"3rem"}
         textAlign={["center", "center", "start", "start"]}

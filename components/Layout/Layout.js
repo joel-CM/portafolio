@@ -22,7 +22,13 @@ export default function Layout(props) {
       {/* end header */}
 
       {/* navbar */}
-      <Grid templateColumns={"repeat(2, 1fr)"}>
+      <Grid
+        templateColumns={"repeat(2, 1fr)"}
+        bg={"#fff"}
+        position={"sticky"}
+        top={0}
+        zIndex={100}
+      >
         <GridItem alignSelf={"center"}>
           <Box
             as={"button"}

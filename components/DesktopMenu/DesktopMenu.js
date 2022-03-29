@@ -22,6 +22,24 @@ export default function DesktopMenu() {
           as={"button"}
           color={"teal.700"}
           _hover={{ bg: "#99dd99", color: "#fefffe" }}
+          onClick={() => router.push("http://localhost:3000/#tech-skills")}
+        >
+          Tech Skills
+        </Box>
+        <Box
+          p={"5px 10px"}
+          as={"button"}
+          color={"teal.700"}
+          _hover={{ bg: "#99dd99", color: "#fefffe" }}
+          onClick={() => router.push("http://localhost:3000/#projects")}
+        >
+          Projects
+        </Box>
+        <Box
+          p={"5px 10px"}
+          as={"button"}
+          color={"teal.700"}
+          _hover={{ bg: "#99dd99", color: "#fefffe" }}
           onClick={() => router.push("/contact")}
         >
           Contact
