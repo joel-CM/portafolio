@@ -13,9 +13,9 @@ export default function DesktopMenu() {
           color={"teal.700"}
           _hover={{ bg: "#99dd99", color: "#fefffe" }}
           transition={"ease .20s"}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("#about-me")}
         >
-          Home
+          About me
         </Box>
         <Box
           p={"5px 10px"}

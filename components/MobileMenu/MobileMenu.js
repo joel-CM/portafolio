@@ -28,9 +28,9 @@ export default function MobileMenu() {
                 <MenuItem
                   color={"teal"}
                   _hover={{ background: "#aaddaa", color: "#efffef" }}
-                  onClick={() => router.push("/")}
+                  onClick={() => router.push("#about-me")}
                 >
-                  Home
+                  About me
                 </MenuItem>
                 <MenuItem
                   color={"teal"}
