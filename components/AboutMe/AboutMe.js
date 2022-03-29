@@ -4,6 +4,7 @@ export default function AboutMe() {
   return (
     <>
       <Grid
+        id={"about-me"}
         templateColumns={"repeat(6, 1fr)"}
         justifyItems={"center"}
         alignItems={"center"}
@@ -31,24 +32,23 @@ export default function AboutMe() {
             textAlign={"justify"}
             color={"teal.700"}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat
-            ad necessitatibus, minima soluta accusamus laudantium! Iure, ad.
-            Beatae nesciunt quam cumque sunt itaque porro quod! Eveniet
-            voluptatibus eligendi provident! Voluptate, in voluptas eligendi
-            dolores, vitae cum est similique recusandae omnis error, velit
-            corporis autem reprehenderit debitis quis fugiat iusto. Aut quos eos
-            similique consequatur magnam ipsam cum autem. Quae. Earum nam
-            suscipit cupiditate repellat, nesciunt perferendis inventore! Minima
-            necessitatibus accusantium iure sed officiis repellendus, id dolorum
-            autem consequuntur perspiciatis culpa asperiores saepe perferendis
-            delectus ab praesentium eaque dolor illum. Dicta non neque
-            cupiditate minus ipsam fuga dignissimos harum laborum cumque odio
-            laudantium assumenda dolorem esse, iste iure ratione natus rem in,
-            amet ad repellendus, asperiores eos! Voluptate, deserunt dolorum?
-            Cum sapiente quam nisi molestias ducimus temporibus quia officiis
-            ullam adipisci neque iste quisquam itaque nemo, iure ad dolores
-            eveniet minus quos provident, reprehenderit fugiat modi atque
-            dolorum? Libero, pariatur.
+            Bienvenido a mi portafolio, mi nombre es Joel Chavez (ARG), tengo 19
+            años y soy un desarrollador web full stack. <br />
+            <br />
+            Mi pasión por el desarrollo web comenzó a mediados del 2020 en medio
+            de la pandemia, y hoy (29/03/2022) mientras escribo esto estoy
+            terminando el famoso Bootcamp de SoyHenry con una duración
+            aproximada de 6 meses al cual le saque el máximo provecho. <br />
+            <br />
+            Soy una persona bastante autodidacta e incluso previo a mi ingreso a
+            SoyHenry llegue a terminar un curso (desarrollador web full stack)
+            en la UTN incluyendo varios más gratuitos online. <br />
+            <br />
+            Actualmente me sigo capacitando por mi cuenta y estoy aprendiendo
+            NextJs (esta web está hecha en next y chakra-ui), también tengo
+            pensado agregar a mis skills Python (backend). <br />
+            <br />
+            ¡Saludos!
           </Text>
         </GridItem>
       </Grid>
