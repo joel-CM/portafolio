@@ -1,11 +1,11 @@
-import style from "./404.module.css";
+import { Flex, Heading } from "@chakra-ui/react";
 
-export default (first) => {
+export default () => {
   return (
-    <div className={style.container}>
-      <h1 className="title">
-        404: La url no existe, presta más atención cara torta.
-      </h1>
-    </div>
+    <Flex h={"60vh"} justifyContent={"center"} alignItems={"center"}>
+      <Heading color={"tomato"}>
+        404: La url no existe!
+      </Heading>
+    </Flex>
   );
 };

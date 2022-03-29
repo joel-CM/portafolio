@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Box,
-  Grid,
-  GridItem,
-  Heading,
-  Text,
-  Image,
-} from "@chakra-ui/react";
+import { Grid, GridItem, Heading, Text, Image } from "@chakra-ui/react";
 
 export default function AboutMe() {
   return (
