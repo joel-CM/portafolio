@@ -4,10 +4,19 @@ import DesktopMenu from "../DesktopMenu/DesktopMenu";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { Box, Grid, GridItem, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  IconButton,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
 export default function Layout(props) {
   const router = useRouter();
+  const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("#fff", "teal.500");
   const color = useColorModeValue("teal", "#efffef");
 
@@ -37,11 +46,14 @@ export default function Layout(props) {
             fontSize={["1.5rem", "1.5rem", "2rem", "2.2rem"]}
             fontFamily={"Inspiration"}
             color={color}
-            px={10}
+            px={[5, 5, 10, 10]}
             py={3}
             onClick={() => router.push("/")}
           >
             Joel Chavez
+          </Box>
+          <Box as={"button"} py={3} mx={5} onClick={toggleColorMode}>
+            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Box>
         </GridItem>
 
