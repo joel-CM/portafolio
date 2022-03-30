@@ -3,6 +3,7 @@ import {
   GridItem,
   Heading,
   Text,
+  Link,
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -51,8 +52,16 @@ export default function AboutMe() {
             aproximada de 6 meses al cual le saque el máximo provecho. <br />
             <br />
             Soy una persona bastante autodidacta e incluso previo a mi ingreso a
-            SoyHenry llegue a terminar un curso (desarrollador web full stack)
-            en la UTN incluyendo varios más gratuitos online. <br />
+            SoyHenry llegue a terminar un curso (
+            <Link
+              href="https://drive.google.com/file/d/1dNHsL-ds8tIXvL7IKx-mKHepR1KrTKff/view?usp=sharing"
+              target={"_blank"}
+              borderBottom={"0.5px solid teal.300"}
+              color={"teal.300"}
+            >
+              desarrollador web full stack
+            </Link>
+            ) en la UTN incluyendo varios más gratuitos online. <br />
             <br />
             Actualmente me sigo capacitando por mi cuenta y estoy aprendiendo
             NextJs (esta web está hecha en next y chakra-ui), también tengo
@@ -64,4 +73,7 @@ export default function AboutMe() {
       </Grid>
     </>
   );
+}
+{
+  /* https://drive.google.com/file/d/1dNHsL-ds8tIXvL7IKx-mKHepR1KrTKff/view?usp=sharing */
 }
