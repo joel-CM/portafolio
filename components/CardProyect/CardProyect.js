@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function CardProyect({ img, title, link, info }) {
   const titleColor = useColorModeValue("#99cc99", "#aaddaa");
   const color = useColorModeValue("teal", "teal.200");
-  const bgColor = useColorModeValue("#eee", "#223322");
+  const bgColor = useColorModeValue("#eee", "#233323");
 
   return (
     <Box
