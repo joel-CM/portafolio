@@ -1,5 +1,11 @@
 import style from "./Skills.module.css";
-import { Heading, Box, Flex, styled } from "@chakra-ui/react";
+import {
+  Heading,
+  Box,
+  Flex,
+  styled,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import Link from "next/link";
 // icons
 import { DiReact } from "react-icons/di";
@@ -14,12 +20,14 @@ import {
 import { FaNodeJs } from "react-icons/fa";
 
 export default function Skills() {
+  const titleColor = useColorModeValue("#99cc99", "#558855");
+
   return (
     <Box px={10} id={"tech-skills"}>
       <Heading
         py={"3rem"}
         textAlign={["center", "center", "end", "end"]}
-        color={"#99cc99"}
+        color={titleColor}
       >
         Tech Skills
       </Heading>

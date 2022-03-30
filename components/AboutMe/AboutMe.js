@@ -1,6 +1,16 @@
-import { Grid, GridItem, Heading, Text, Image } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  Heading,
+  Text,
+  Image,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 export default function AboutMe() {
+  const color = useColorModeValue("teal.700", "teal");
+  const titleColor = useColorModeValue("#99cc99", "#558855");
+
   return (
     <>
       <Grid
@@ -13,7 +23,7 @@ export default function AboutMe() {
         mb={10}
       >
         <GridItem colSpan={6} justifySelf={["center", "center", "end", "end"]}>
-          <Heading py={"3rem"} textAlign={"center"} color={"#99cc99"}>
+          <Heading py={"3rem"} textAlign={"center"} color={titleColor}>
             About me
           </Heading>
         </GridItem>
@@ -30,7 +40,7 @@ export default function AboutMe() {
           <Text
             fontSize={["sm", "md", "lg", "xl"]}
             textAlign={"justify"}
-            color={"teal.700"}
+            color={color}
           >
             Bienvenido a mi portafolio, mi nombre es Joel Chavez (ARG), tengo 19
             años y soy un desarrollador web full stack. <br />

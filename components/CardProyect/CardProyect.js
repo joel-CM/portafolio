@@ -1,15 +1,26 @@
 import style from "./CardProyect.module.css";
-import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Button,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import Img from "next/image";
 import Link from "next/link";
 
 export default function CardProyect({ img, title, link, info }) {
+  const titleColor = useColorModeValue("#99cc99", "#aaddaa");
+  const color = useColorModeValue("teal", "teal.200");
+  const bgColor = useColorModeValue("#eee", "#223322");
+
   return (
     <Box
       m={3}
       w={["100%", "100%", "400px", "400px"]}
       borderRadius={10}
-      bg={"#eee"}
+      bg={bgColor}
       _hover={{ outline: "0.1px solid teal" }}
     >
       <Flex justifyContent={"center"} p={5}>
@@ -19,7 +30,13 @@ export default function CardProyect({ img, title, link, info }) {
           height={"100%"}
         />
       </Flex>
-      <Heading as={"h4"} size={"md"} textAlign={"center"} py={3} color={"teal"}>
+      <Heading
+        as={"h4"}
+        size={"md"}
+        textAlign={"center"}
+        py={3}
+        color={titleColor}
+      >
         {title}
       </Heading>
       <Text
@@ -29,7 +46,7 @@ export default function CardProyect({ img, title, link, info }) {
         p={3}
         minH={"250px"}
         maxH={"250px"}
-        color={"teal"}
+        color={color}
         overflowY={"auto"}
       >
         {info}
@@ -37,7 +54,7 @@ export default function CardProyect({ img, title, link, info }) {
       <Flex justifyContent={"center"} p={3}>
         <Link href={{ pathname: link }}>
           <a target={"_blank"} style={{ display: "block", width: "100%" }}>
-            <Button colorScheme="teal" variant="#000" w={"100%"}>
+            <Button colorScheme={color} variant="#000" w={"100%"}>
               See project
             </Button>
           </a>

@@ -4,10 +4,12 @@ import DesktopMenu from "../DesktopMenu/DesktopMenu";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem, useColorModeValue } from "@chakra-ui/react";
 
 export default function Layout(props) {
   const router = useRouter();
+  const bg = useColorModeValue("#fff", "teal.500");
+  const color = useColorModeValue("teal", "#efffef");
 
   return (
     <div className={style.layout}>
@@ -24,7 +26,7 @@ export default function Layout(props) {
       {/* navbar */}
       <Grid
         templateColumns={"repeat(2, 1fr)"}
-        bg={"#fff"}
+        bg={bg}
         position={"sticky"}
         top={0}
         zIndex={100}
@@ -34,7 +36,7 @@ export default function Layout(props) {
             as={"button"}
             fontSize={["1.5rem", "1.5rem", "2rem", "2.2rem"]}
             fontFamily={"Inspiration"}
-            color={"teal"}
+            color={color}
             px={10}
             py={3}
             onClick={() => router.push("/")}

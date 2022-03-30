@@ -1,13 +1,15 @@
 import CardProyect from "../CardProyect/CardProyect";
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, useColorModeValue } from "@chakra-ui/react";
 
 export default function Proyects(props) {
+  const titleColor = useColorModeValue("#99cc99", "#558855");
+
   return (
     <Box px={10} id={"projects"}>
       <Heading
         py={"3rem"}
         textAlign={["center", "center", "start", "start"]}
-        color={"#99cc99"}
+        color={titleColor}
       >
         My Proyects
       </Heading>

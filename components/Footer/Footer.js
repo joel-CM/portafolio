@@ -1,8 +1,17 @@
-import { Box, Flex, Heading, HStack, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Link,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 
 export default function Footer() {
+  const titleColor = useColorModeValue("#99cc99", "#558855");
+
   return (
     <Box py={"3rem"}>
       <Heading
@@ -10,7 +19,7 @@ export default function Footer() {
         fontSize={["sm", "md", "xl", "xl"]}
         py={5}
         textAlign={"center"}
-        color={"teal.600"}
+        color={titleColor}
       >
         CONTACT
       </Heading>

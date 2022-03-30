@@ -1,8 +1,17 @@
-import { Hide, Flex, Box } from "@chakra-ui/react";
+import {
+  Hide,
+  Flex,
+  Box,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 export default function DesktopMenu() {
   const router = useRouter();
+  const { colorMode, toggleColorMode } = useColorMode();
+  const color = useColorModeValue("teal.700", "#efffef");
+  const bgHover = useColorModeValue("#99dd99", "#77bb77");
 
   return (
     <Hide breakpoint="(max-width: 770px)">
@@ -10,8 +19,8 @@ export default function DesktopMenu() {
         <Box
           p={"5px 10px"}
           as={"button"}
-          color={"teal.700"}
-          _hover={{ bg: "#99dd99", color: "#fefffe" }}
+          color={color}
+          _hover={{ bg: bgHover }}
           transition={"ease .20s"}
           onClick={() => router.push("#about-me")}
         >
@@ -20,8 +29,8 @@ export default function DesktopMenu() {
         <Box
           p={"5px 10px"}
           as={"button"}
-          color={"teal.700"}
-          _hover={{ bg: "#99dd99", color: "#fefffe" }}
+          color={color}
+          _hover={{ bg: bgHover }}
           onClick={() => router.push("#tech-skills")}
         >
           Tech Skills
@@ -29,11 +38,20 @@ export default function DesktopMenu() {
         <Box
           p={"5px 10px"}
           as={"button"}
-          color={"teal.700"}
-          _hover={{ bg: "#99dd99", color: "#fefffe" }}
+          color={color}
+          _hover={{ bg: bgHover }}
           onClick={() => router.push("#projects")}
         >
           Projects
+        </Box>
+        <Box
+          p={"5px 10px"}
+          as={"button"}
+          color={color}
+          _hover={{ bg: bgHover }}
+          onClick={toggleColorMode}
+        >
+          {colorMode === "light" ? "Dark" : "Light"}
         </Box>
       </Flex>
     </Hide>
