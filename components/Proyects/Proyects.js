@@ -32,6 +32,24 @@ export default function Proyects(props) {
           link={"http://pi-dog-front.herokuapp.com"}
           info={`Este es un proyecto individual académico hecho durante el bootcamp de SoyHenry. El proyecto trata con una temática sobre perros, la aplicación web ofrece información detallada sobre las distintas razas existentes, tambíen cuenta con filtros y un campo de busqueda que mejoran la experiencia. Además, brindando la información necesaria es posible 'crear' tus propias razas y visualizarlas dentro de la aplicación.`}
         />
+        <CardProyect
+          img={"weatherapp.jpeg"}
+          title={"Weather App"}
+          link={"https://joelcm-weatherapp.vercel.app/"}
+          info={`Weather App es una mini aplicación web, donde podrás ver al detalle la información meteorológica de todas las ciudades más importantes de la Argentina.`}
+        />
+        <CardProyect
+          img={"noteblog.png"}
+          title={"Noteblog"}
+          link={"https://noteblogfront.herokuapp.com/home"}
+          info={`Este proyecto es una aplicación web, como un blog de notas tradicional con un sistema de inicio de sesión.`}
+        />
+        <CardProyect
+          img={"kimche.png"}
+          title={"kimchechallenge"}
+          link={"https://joelcm-kimchechallenge.vercel.app/"}
+          info={`Este proyecto es el resultado de un challenge, el cual basicamente en un buscador de paises hecho con React y GraphQL.`}
+        />
       </Flex>
     </Box>
   );

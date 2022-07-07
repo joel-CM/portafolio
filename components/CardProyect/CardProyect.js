@@ -11,7 +11,6 @@ import Img from "next/image";
 import Link from "next/link";
 
 export default function CardProyect({ img, title, link, info }) {
-  const titleColor = useColorModeValue("#99cc99", "#aaddaa");
   const color = useColorModeValue("teal", "teal.200");
   const bgColor = useColorModeValue("#eee", "#233323");
 
@@ -23,20 +22,14 @@ export default function CardProyect({ img, title, link, info }) {
       bg={bgColor}
       _hover={{ outline: "0.1px solid teal" }}
     >
-      <Flex justifyContent={"center"} p={5}>
+      <Flex justifyContent={"center"} p={2}>
         <Img
           src={require(`../../assets/imgs/${img}`)}
-          width={"100%"}
-          height={"100%"}
+          width={"200px"}
+          height={"200px"}
         />
       </Flex>
-      <Heading
-        as={"h4"}
-        size={"md"}
-        textAlign={"center"}
-        py={3}
-        color={titleColor}
-      >
+      <Heading as={"h4"} size={"md"} textAlign={"center"} py={3} color={color}>
         {title}
       </Heading>
       <Text

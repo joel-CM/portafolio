@@ -43,37 +43,33 @@ export default function AboutMe() {
             textAlign={"justify"}
             color={color}
           >
-            Bienvenido a mi portafolio, mi nombre es Joel Chavez (ARG), tengo 19
-            años y soy un desarrollador web full stack. <br />
-            <br />
-            Mi pasión por el desarrollo web comenzó a mediados del 2020 en medio
-            de la pandemia, y hoy (29/03/2022) mientras escribo esto estoy
-            terminando el famoso Bootcamp de SoyHenry con una duración
-            aproximada de 6 meses al cual le saque el máximo provecho. <br />
-            <br />
-            Soy una persona bastante autodidacta e incluso previo a mi ingreso a
-            SoyHenry llegue a terminar un curso (
+            <Text textAlign={"center"}>¡Hola!</Text>
+            Soy Joel Chavez, apasionado por el desarrollo y la tecnología.
+            Graduado tanto en henry como desarrollador web fullstack (
+            <Link
+              href="https://certificates.soyhenry.com/cert?id=07af09c2-da51-4de2-a078-c766009e9419"
+              target={"_blank"}
+              borderBottom={"0.5px solid teal.300"}
+              color={"teal.300"}
+            >
+              link
+            </Link>
+            ) como en la UTN (
             <Link
               href="https://drive.google.com/file/d/1dNHsL-ds8tIXvL7IKx-mKHepR1KrTKff/view?usp=sharing"
               target={"_blank"}
               borderBottom={"0.5px solid teal.300"}
               color={"teal.300"}
             >
-              desarrollador web full stack
+              link
             </Link>
-            ) en la UTN incluyendo varios más gratuitos online. <br />
+            ).
             <br />
-            Actualmente me sigo capacitando por mi cuenta y estoy aprendiendo
-            NextJs (esta web está hecha en next y chakra-ui), también tengo
-            pensado agregar a mis skills Python (backend). <br />
-            <br />
-            ¡Saludos!
+            Aunque que el desarrollo frontend también me gusta mucho, admito que
+            estoy mas inclinado por el backend.
           </Text>
         </GridItem>
       </Grid>
     </>
   );
-}
-{
-  /* https://drive.google.com/file/d/1dNHsL-ds8tIXvL7IKx-mKHepR1KrTKff/view?usp=sharing */
 }
